@@ -1,0 +1,101 @@
+html{
+  box-sizing: border-box;
+  height: 100%;
+}
+*, *::after, *::before{
+  box-sizing: inherit;
+}
+body{
+  height: 100%;
+}
+
+.calc-gridbox #calc_field {
+  padding: 8px;
+  font-size: 4rem;
+  font-family: "Digital-7", "Lucida Console", "Times New Roman", serif;
+  text-align: right;
+  border-radius: 15px;
+}
+.calc-gridbox button {
+  font-size: 2rem;
+  font-style: italic;
+  border-radius: 15px 50px 30px;
+  background-color: #225A;
+  color: white;
+}
+
+.calc-gridbox {
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  border: 16px inset #44D;
+  background-color: #88A;
+  display: grid;
+  grid-gap: 8px;
+  grid-template-areas:
+    "field field   field    field"
+    "one   two     three    ac"
+    "four  five    six      delete"
+    "seven eight   nine     plus"
+    "zero  decimal multiply minus"
+    "equal equal   equal    divide";
+}
+#calc_field {
+  grid-area: field;
+}
+#calc_one {
+  grid-area: one;
+}
+#calc_two {
+  grid-area: two;
+}
+#calc_three {
+  grid-area: three;
+}
+#calc_ac {
+  grid-area: ac;
+  color: red;
+}
+#calc_four {
+  grid-area: four;
+}
+#calc_five {
+  grid-area: five;
+}
+#calc_six {
+  grid-area: six;
+}
+#calc_delete {
+  grid-area: delete;
+  color: red;
+}
+#calc_seven {
+  grid-area: seven;
+}
+#calc_eight {
+  grid-area: eight;
+}
+#calc_nine {
+  grid-area: nine;
+}
+#calc_plus {
+  grid-area: plus;
+}
+#calc_zero {
+  grid-area: zero;
+}
+#calc_decimal {
+  grid-area: decimal;
+}
+#calc_multiply {
+  grid-area: multiply;
+}
+#calc_minus {
+  grid-area: minus;
+}
+#calc_equal {
+  grid-area: equal;
+}
+#calc_divide {
+  grid-area: divide;
+}
